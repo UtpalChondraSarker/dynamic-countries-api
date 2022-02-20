@@ -26,21 +26,21 @@ const displayCountries=countries=>{
     })
 }
 
-// const loadCountryByName=name=>{
-//     const url=`https://restcountries.com/v3.1/name/${name}`
-//     //console.log(url);
-//     fetch(url)
-//     .then(res=>res.json())
-//     .then(data=>displayCountryDetails(data[0]))
+const loadCountryByName=name=>{
+    const url=`https://restcountries.com/v3.1/name/${name}`
+    //console.log(url);
+    fetch(url)
+    .then(res=>res.json())
+    .then(data=>displayCountryDetails(data[0]))
 
-// }
-// const displayCountryDetails=(country)=>{
-//     console.log(country)
-//     const countryDiv=document.getElementById('counntry-details')
-//     countryDiv.innerHTML=`
-//     <h2> Country Name: ${country.name.common} </h2>
-//     <p>population:${country.population}</p>
-//     <img width='200px' src="${country.flags.svg}">
-//     `
+}
+const displayCountryDetails=(country)=>{
+    console.log(country)
+    const countryDiv=document.getElementById('counntry-details')
+    countryDiv.innerHTML=`
+    <h2> Country Name: ${country.name.common} </h2>
+    <p>population:${country.population}</p>
+    <img width='200px' src="${country.flags.svg}">
+    `
 
-//     }
+    }
