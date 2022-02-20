@@ -40,7 +40,9 @@ const displayCountryDetails=(country)=>{
     countryDiv.innerHTML=`
     <h2> Country Name: ${country.name.common} </h2>
     <p>population:${country.population}</p>
+    <p>capital:${country.capital}</p>
     <img width='200px' src="${country.flags.svg}">
+    
     `
 
     }
